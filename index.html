@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Yıldız Mobilya — Ev Mobilyası Üretimi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#14213d"/><text x="46" y="63" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="34" fill="#fff">YM</text><circle cx="78" cy="61" r="4" fill="#f26b1d"/></svg></template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#14213d;font-family:'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#14213d;text-decoration:none}
+a:hover{color:#f26b1d}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#fff;display:flex;flex-direction:column">
+  <header style="max-width:1160px;width:100%;margin:0 auto;padding:24px clamp(20px,5vw,48px);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+    <span style="font-weight:800;font-size:20px;letter-spacing:-0.02em;color:#14213d">Yıldız Mobilya<span style="color:#f26b1d">.</span></span>
+    <nav style="display:flex;gap:clamp(16px,3vw,32px);font-size:15px;font-weight:500;flex-wrap:wrap">
+      <a href="#urunler" style="color:#14213d" style-hover="color:#f26b1d">Ürünler</a>
+      <a href="#uyelik" style="color:#14213d" style-hover="color:#f26b1d">Üye Ol</a>
+      <a href="#hakkimizda" style="color:#14213d" style-hover="color:#f26b1d">Hakkımızda</a>
+      <a href="#iletisim" style="color:#14213d" style-hover="color:#f26b1d">İletişim</a>
+    </nav>
+  </header>
+
+  <section style="max-width:1160px;width:100%;margin:0 auto;padding:clamp(40px,8vw,96px) clamp(20px,5vw,48px) clamp(56px,9vw,112px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,64px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <p style="margin:0;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5a6680">1998'den beri · Kayseri</p>
+      <h1 style="margin:0;font-size:clamp(40px,6.4vw,76px);line-height:1.04;font-weight:800;letter-spacing:-0.035em;color:#14213d;text-wrap:balance">Evinize özel, <span style="color:#f26b1d">sağlam</span> mobilyalar.</h1>
+      <p style="margin:0;max-width:520px;font-size:clamp(18px,2vw,21px);line-height:1.6;color:#3b4763;text-wrap:pretty">Oturma grubundan yatak odasına, tüm mobilyalarımızı kendi atölyemizde, ölçünüze göre üretiyoruz.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+        <a href="#iletisim" style="background:#f26b1d;color:#fff;font-weight:600;font-size:16px;padding:16px 28px;border-radius:999px;transition:background .2s" style-hover="background:#d95a10;color:#fff">Teklif İsteyin</a>
+        <a href="#urunler" style="color:#14213d;font-weight:600;font-size:16px;padding:16px 28px;border-radius:999px;border:1.5px solid #14213d;transition:all .2s" style-hover="background:#14213d;color:#fff">Ürünleri Görün</a>
+      </div>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3.4;border-radius:20px;overflow:hidden;background:#eef1f6">
+      <img src="images/anagorsel-1.jpg" alt="Yemek ve yaşam alanı" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ op0 }};transition:opacity 1s ease"></img>
+      <img src="images/anagorsel-2.jpg" alt="Salon ve oturma grubu" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ op1 }};transition:opacity 1s ease"></img>
+      <img src="images/anagorsel-3.jpg" alt="Yatak odası" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ op2 }};transition:opacity 1s ease"></img>
+      <div style="position:absolute;left:0;right:0;bottom:20px;display:flex;justify-content:center;gap:8px">
+        <sc-for list="{{ heroSlides }}" as="s" hint-placeholder-count="3">
+          <button type="button" aria-label="{{ s.alt }}" onClick="{{ s.go }}" style="width:{{ s.dotW }};height:8px;border:none;padding:0;border-radius:999px;background:{{ s.dotBg }};cursor:pointer;transition:all .3s"></button>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="urunler" style="background:#f6f7fa">
+    <div style="max-width:1160px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,5vw,48px)">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <p style="margin:0;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5a6680">Ürünlerimiz</p>
+          <h2 style="margin:0;font-size:clamp(30px,4vw,44px);line-height:1.1;font-weight:800;letter-spacing:-0.03em;color:#14213d">Her oda için bir çözüm</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px">
+          <div style="background:#fff;border:1px solid #e6e9ef;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(20,33,61,.25)">
+            <div style="aspect-ratio:4/3;overflow:hidden;background:#eef1f6"><img src="images/Oturma_grubu.jpg" alt="Oturma Grupları" style="width:100%;height:100%;object-fit:cover;display:block"></img></div>
+            <div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:12px">
+              <h3 style="margin:0;font-size:22px;font-weight:700;letter-spacing:-0.01em;color:#14213d">Oturma Grupları</h3>
+              <p style="margin:0;font-size:16px;line-height:1.6;color:#3b4763;text-wrap:pretty">Koltuk ve kanepeler; kumaş, renk ve ölçü tercihinize göre.</p>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #e6e9ef;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(20,33,61,.25)">
+            <div style="aspect-ratio:4/3;overflow:hidden;background:#eef1f6"><img src="images/Yemek_Odas%C4%B1.jpg" alt="Yemek Odası" style="width:100%;height:100%;object-fit:cover;display:block"></img></div>
+            <div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:12px">
+              <h3 style="margin:0;font-size:22px;font-weight:700;letter-spacing:-0.01em;color:#14213d">Yemek Odası</h3>
+              <p style="margin:0;font-size:16px;line-height:1.6;color:#3b4763;text-wrap:pretty">Masif ahşap masa, sandalye ve konsol takımları.</p>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #e6e9ef;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(20,33,61,.25)">
+            <div style="aspect-ratio:4/3;overflow:hidden;background:#eef1f6"><img src="images/anagorsel-3.jpg" alt="Yatak Odası" style="width:100%;height:100%;object-fit:cover;display:block"></img></div>
+            <div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:12px">
+              <h3 style="margin:0;font-size:22px;font-weight:700;letter-spacing:-0.01em;color:#14213d">Yatak Odası</h3>
+              <p style="margin:0;font-size:16px;line-height:1.6;color:#3b4763;text-wrap:pretty">Karyola, gardırop ve komodin; odanıza tam uyacak ölçüde.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="uyelik" style="max-width:1160px;width:100%;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,5vw,48px);display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <p style="margin:0;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5a6680">Üyelik</p>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 48px;flex-wrap:wrap">
+      <h2 style="margin:0;max-width:820px;font-size:clamp(30px,4.4vw,52px);line-height:1.08;font-weight:800;letter-spacing:-0.03em;color:#14213d;text-wrap:balance">Üye olun, <span style="color:#f26b1d">ilk siparişinizde</span> %10 indirim kazanın.</h2>
+      <p style="margin:0;max-width:340px;font-size:17px;line-height:1.6;color:#3b4763;text-wrap:pretty">Siparişlerinizi takip edin, yeni koleksiyonlardan ve kampanyalardan ilk siz haberdar olun.</p>
+      </div>
+    </div>
+    <div style="background:#f6f7fa;border:1px solid #e6e9ef;border-radius:20px;padding:clamp(24px,4vw,40px)">
+      <sc-if value="{{ regDone }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:16px;padding:40px 0;text-align:center;align-items:center">
+          <div style="width:56px;height:56px;border-radius:50%;background:#f26b1d;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700">✓</div>
+          <h3 style="margin:0;font-size:24px;font-weight:800;letter-spacing:-0.02em;color:#14213d">Hoş geldiniz!</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#3b4763;max-width:340px">Üyeliğiniz oluşturuldu. İndirim kodunuz e-posta adresinize gönderildi.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ regNotDone }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ register }}" style="display:flex;flex-direction:column;gap:18px">
+          <h3 style="margin:0 0 4px;font-size:22px;font-weight:800;letter-spacing:-0.02em;color:#14213d">Üye Kayıt Formu</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:18px">
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#14213d">Ad Soyad *
+            <input name="ad" required="{{ true }}" autoComplete="name" placeholder="Adınız ve soyadınız" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+          </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#14213d">E-posta *
+              <input name="eposta" type="email" required="{{ true }}" autoComplete="email" placeholder="ornek@mail.com" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#14213d">Telefon
+              <input name="telefon" type="tel" autoComplete="tel" placeholder="05xx xxx xx xx" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#14213d">Şifre *
+              <input name="sifre" type="password" required="{{ true }}" minLength="8" autoComplete="new-password" placeholder="En az 8 karakter" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#14213d">Şifre (tekrar) *
+              <input name="sifre2" type="password" required="{{ true }}" minLength="8" autoComplete="new-password" placeholder="Şifrenizi tekrar girin" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+            </label>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 40px;margin-top:6px">
+            <div style="display:flex;flex-direction:column;gap:12px;flex:1 1 420px;min-width:0">
+              <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#3b4763;cursor:pointer">
+            <input name="kvkk" type="checkbox" required="{{ true }}" style="width:20px;height:20px;margin:0;flex:none;accent-color:#f26b1d"></input>
+            <span>KVKK Aydınlatma Metni'ni okudum, kişisel verilerimin işlenmesini kabul ediyorum. *</span>
+          </label>
+              <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#3b4763;cursor:pointer">
+            <input name="kampanya" type="checkbox" style="width:20px;height:20px;margin:0;flex:none;accent-color:#f26b1d"></input>
+            <span>Kampanya ve yeniliklerden e-posta ile haberdar olmak istiyorum.</span>
+          </label>
+            </div>
+            <button type="submit" disabled="{{ regSending }}" style="flex:0 0 auto;min-width:200px;background:#14213d;color:#fff;border:none;font:600 16px 'Plus Jakarta Sans',sans-serif;padding:16px 28px;border-radius:999px;cursor:pointer;transition:background .2s" style-hover="background:#f26b1d">{{ regButtonLabel }}</button>
+          </div>
+          <sc-if value="{{ regError }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;font-size:14px;color:#c0392b">{{ regError }}</p>
+          </sc-if>
+        </form>
+      </sc-if>
+    </div>
+  </section>
+
+  <div style="max-width:1160px;width:100%;margin:0 auto;padding:0 clamp(20px,5vw,48px)"><div style="height:1px;background:#e6e9ef"></div></div>
+
+  <section id="hakkimizda" style="max-width:1160px;width:100%;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(32px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5a6680">Hakkımızda</p>
+      <h2 style="margin:0;font-size:clamp(30px,4vw,44px);line-height:1.1;font-weight:800;letter-spacing:-0.03em;color:#14213d">Usta işi, aile işi.</h2>
+    </div>
+    <div style="grid-column:span 2;display:flex;flex-direction:column;gap:32px;max-width:680px">
+      <p style="margin:0;font-size:clamp(18px,1.8vw,20px);line-height:1.7;color:#14213d;text-wrap:pretty">25 yılı aşkın süredir masif ahşap ve kaliteli malzemelerle ev mobilyası üretiyoruz. Ölçü almadan montaja kadar her adımı kendi ekibimizle yapıyor, ürünlerimize 2 yıl garanti veriyoruz.</p>
+      <div style="display:flex;gap:clamp(24px,5vw,56px);flex-wrap:wrap">
+        <sc-for list="{{ facts }}" as="f" hint-placeholder-count="3">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:clamp(28px,3.4vw,38px);font-weight:800;letter-spacing:-0.03em;color:#f26b1d">{{ f.value }}</span>
+            <span style="font-size:15px;color:#5a6680">{{ f.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <footer id="iletisim" style="background:#14213d;color:#fff">
+    <div style="max-width:1160px;margin:0 auto;padding:clamp(72px,11vw,128px) clamp(20px,5vw,48px) 40px">
+      <p style="margin:0 0 20px;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#aab4c8">İletişim</p>
+      <div style="display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+      <div style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;max-width:820px;font-size:clamp(32px,4.6vw,52px);line-height:1.08;font-weight:800;letter-spacing:-0.03em;color:#fff;text-wrap:balance">Ücretsiz ölçü ve teklif için bize ulaşın.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px 40px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#aab4c8">Telefon</span>
+          <a href="tel:+905550000000" style="font-size:20px;font-weight:600;color:#fff" style-hover="color:#f26b1d">0555 000 00 00</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#aab4c8">E-posta</span>
+          <a href="mailto:info@yildizmobilya.com" style="font-size:20px;font-weight:600;color:#fff;word-break:break-all" style-hover="color:#f26b1d">info@yildizmobilya.com</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#aab4c8">Atölye</span>
+          <span style="font-size:18px;line-height:1.5;color:#fff">Organize Sanayi Bölgesi, 12. Cadde No: 8, Kayseri</span>
+        </div>
+      </div>
+      </div>
+      <div style="background:#fff;border-radius:20px;padding:clamp(24px,4vw,40px);color:#14213d">
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:16px;padding:40px 0;text-align:center;align-items:center">
+            <div style="width:56px;height:56px;border-radius:50%;background:#f26b1d;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700">✓</div>
+            <h3 style="margin:0;font-size:24px;font-weight:800;letter-spacing:-0.02em">Mesajınız alındı</h3>
+            <p style="margin:0;font-size:16px;line-height:1.6;color:#3b4763;max-width:340px">En geç 1 iş günü içinde sizi arayacağız. Teşekkür ederiz.</p>
+            <button type="button" onClick="{{ reset }}" style="margin-top:8px;background:none;border:1.5px solid #14213d;color:#14213d;font:600 15px 'Plus Jakarta Sans',sans-serif;padding:12px 24px;border-radius:999px;cursor:pointer" style-hover="background:#14213d;color:#fff">Yeni mesaj</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:18px">
+            <h3 style="margin:0 0 4px;font-size:22px;font-weight:800;letter-spacing:-0.02em">İletişim Formu</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:18px">
+              <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Ad Soyad *
+                <input name="ad" required="{{ true }}" placeholder="Adınız ve soyadınız" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Telefon *
+                <input name="telefon" type="tel" required="{{ true }}" placeholder="05xx xxx xx xx" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">E-posta
+              <input name="eposta" type="email" placeholder="ornek@mail.com" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d"></input>
+            </label>
+              <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">İlgilendiğiniz ürün
+              <select name="urun" style="font:400 16px 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;background:#fff" style-focus="border-color:#f26b1d">
+                <option>Oturma Grubu</option>
+                <option>Yemek Odası</option>
+                <option>Yatak Odası</option>
+                <option>Diğer / Özel Tasarım</option>
+              </select>
+            </label>
+            </div>
+            <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Mesajınız *
+              <textarea name="mesaj" required="{{ true }}" rows="3" placeholder="Ölçü, renk veya istediğiniz model hakkında kısaca yazın" style="font:400 16px/1.5 'Plus Jakarta Sans',sans-serif;color:#14213d;padding:14px 16px;border:1.5px solid #dde2ea;border-radius:12px;outline:none;resize:vertical;background:#fff" style-focus="border-color:#f26b1d"></textarea>
+            </label>
+            <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 40px;margin-top:6px">
+            <div style="flex:1 1 300px;min-width:0">
+            <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;font-size:14px;color:#c0392b">{{ error }}</p>
+            </sc-if>
+            </div>
+            <button type="submit" disabled="{{ sending }}" style="flex:0 0 auto;min-width:200px;background:#f26b1d;color:#fff;border:none;font:600 16px 'Plus Jakarta Sans',sans-serif;padding:16px 28px;border-radius:999px;cursor:pointer;transition:background .2s" style-hover="background:#d95a10">{{ buttonLabel }}</button>
+            </div>
+          </form>
+        </sc-if>
+      </div>
+      </div>
+      <div style="margin-top:clamp(56px,9vw,104px);padding-top:28px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px">
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <sc-for list="{{ socials }}" as="l" hint-placeholder-count="3">
+            <a href="{{ l.url }}" style="font-size:14px;font-weight:500;color:#fff;padding:10px 18px;border:1px solid rgba(255,255,255,.22);border-radius:999px;transition:all .2s" style-hover="border-color:#f26b1d;color:#f26b1d">{{ l.name }}</a>
+          </sc-for>
+        </div>
+        <span style="font-size:13px;color:#aab4c8">© 2026 Yıldız Mobilya</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;formEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;registerEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false, sending: false, error: '' };
+  submit = async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const endpoint = this.props.formEndpoint || ((/railway\.app$|^localhost$/.test(location.hostname) || window.SITE_API) ? '/api/iletisim' : '');
+    this.setState({ sending: true, error: '' });
+    try {
+      if (endpoint) {
+        const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+        if (!r.ok) throw new Error();
+      } else {
+        await new Promise(r => setTimeout(r, 600));
+      }
+      this.setState({ sent: true, sending: false });
+    } catch {
+      this.setState({ sending: false, error: 'Mesaj gönderilemedi. Lütfen tekrar deneyin veya bizi arayın.' });
+    }
+  };
+  register = async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    if (data.sifre !== data.sifre2) return this.setState({ regError: 'Şifreler birbiriyle eşleşmiyor.' });
+    delete data.sifre2;
+    const endpoint = this.props.registerEndpoint || ((/railway\.app$|^localhost$/.test(location.hostname) || window.SITE_API) ? '/api/kayit' : '');
+    this.setState({ regSending: true, regError: '' });
+    try {
+      if (endpoint) {
+        const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+        if (r.status === 409) { this.setState({ regSending: false, regError: 'Bu e-posta ile zaten üye olunmuş.' }); return; }
+        if (!r.ok) throw new Error();
+      } else {
+        await new Promise(r => setTimeout(r, 600));
+      }
+      this.setState({ regDone: true, regSending: false });
+    } catch {
+      this.setState({ regSending: false, regError: 'Kayıt yapılamadı. Lütfen tekrar deneyin.' });
+    }
+  };
+  componentDidMount() {
+    this.timer = setInterval(() => this.setState(s => ({ slide: ((s.slide || 0) + 1) % 3 })), 5000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  renderVals() {
+    const cur = this.state.slide || 0;
+    const heroSlides = [
+      { src: 'images/hero-1.jpg', alt: 'Yemek ve yaşam alanı' },
+      { src: 'images/hero-2.jpg', alt: 'Salon ve oturma grubu' },
+      { src: 'images/hero-3.jpg', alt: 'Yatak odası' }
+    ].map((s, i) => ({
+      ...s,
+      opacity: i === cur ? 1 : 0,
+      dotW: i === cur ? '28px' : '8px',
+      dotBg: i === cur ? '#f26b1d' : 'rgba(255,255,255,.85)',
+      go: () => { clearInterval(this.timer); this.setState({ slide: i }); this.componentDidMount(); }
+    }));
+    return {
+      heroSlides,
+      op0: cur === 0 ? 1 : 0,
+      op1: cur === 1 ? 1 : 0,
+      op2: cur === 2 ? 1 : 0,
+      regDone: !!this.state.regDone,
+      regNotDone: !this.state.regDone,
+      regSending: !!this.state.regSending,
+      regError: this.state.regError || '',
+      regButtonLabel: this.state.regSending ? 'Kaydediliyor…' : 'Üye Ol',
+      register: this.register,
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      sending: this.state.sending,
+      error: this.state.error,
+      buttonLabel: this.state.sending ? 'Gönderiliyor…' : 'Gönder',
+      submit: this.submit,
+      reset: () => this.setState({ sent: false, error: '' }),
+      products: [
+        { img: 'images/oturma-grubu.jpg', title: 'Oturma Grupları', desc: 'Koltuk ve kanepeler; kumaş, renk ve ölçü tercihinize göre.' },
+        { img: 'images/yemek-odasi.jpg', title: 'Yemek Odası', desc: 'Masif ahşap masa, sandalye ve konsol takımları.' },
+        { img: 'images/hero-3.jpg', title: 'Yatak Odası', desc: 'Karyola, gardırop ve komodin; odanıza tam uyacak ölçüde.' }
+      ],
+      facts: [
+        { value: '25+', label: 'yıllık tecrübe' },
+        { value: '3.000+', label: 'mutlu ev' },
+        { value: '2 yıl', label: 'garanti' }
+      ],
+      socials: [
+        { name: 'Instagram', url: '#' },
+        { name: 'WhatsApp', url: '#' },
+        { name: 'Facebook', url: '#' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
